@@ -337,4 +337,4 @@ def main():
 if __name__ == '__main__':
     import fire
     demo = main()
-    fire.Fire(demo.queue(concurrency_count=1, max_size=20).launch)
+    fire.Fire(demo.queue(concurrency_count=1, max_size=20).launch(server_name="0.0.0.0"))
